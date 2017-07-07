@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pannkakor &amp; glass!</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
+    <style type="text/css">@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+    html, head, body {
+      margin: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top {
+      font-family: 'Muli', sans-serif;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    .recipe {
+      font-size: 40px;
+    }
+
+    .buttons {
+      text-align: right;
+    }
+
+    button {
+      cursor: pointer;
+      font-size: 20px;
+      border: 0px solid #ddd;
+      border-radius: 4px;
+      background: white;
+      color: #ccc;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+    </div>
+  </body>
+
+  <script src="pannkakor.js" charset="utf-8"></script>
+
+  <script>
+    var node = document.getElementById('main');
+    var app = Elm.Main.embed(node);
+  </script>
+</html>
