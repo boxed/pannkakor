@@ -1,7 +1,8 @@
 module Main exposing (..)
 
-import Html exposing (Html, div, text, button)
+import Html exposing (Html, div, text, button, h1)
 import Html.Events exposing (onClick)
+import Html.Attributes exposing (class)
 import Round
 
 
@@ -91,8 +92,12 @@ ingredientView model ingredient =
 
 view : Model -> Html Msg
 view model =
-    div []
-        [ div [] (List.map (ingredientView model) ingredients)
-        , button [ onClick Decrement ] [ text "-" ]
-        , button [ onClick Increment ] [ text "+" ]
+    div [ class "top" ]
+        [ h1 [] [ text "Pannkakor" ]
+        , div [ class "recipe" ]
+            [ div [] (List.map (ingredientView model) ingredients) ]
+        , div [ class "buttons" ]
+            [ button [ onClick Decrement ] [ text "mindre" ]
+            , button [ onClick Increment ] [ text "MER" ]
+            ]
         ]
