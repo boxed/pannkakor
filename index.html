@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Pannkakor &amp; glass!</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+    <link rel="stylesheet" media="all and (max-device-width: 480px)" href="iphone.css"> 
     <style type="text/css">@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
     html, head, body {
       margin: 0;
@@ -38,6 +40,19 @@
       color: #ccc;
     }
 
+    #ochglass {
+      position: absolute;
+      bottom: -16px;
+      right: 16px;
+    }
+
+    #ochglass::after {
+      content: "...och glass";
+      font-size: 90px;
+      color: #ccc;
+      font-family: 'Herr Von Muellerhoff', cursive;
+    }
+
     </style>
   </head>
   <body>
@@ -51,4 +66,6 @@
     var node = document.getElementById('main');
     var app = Elm.Main.embed(node);
   </script>
+
+  <div id="ochglass"></div>
 </html>

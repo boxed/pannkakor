@@ -1,0 +1,13 @@
+h1 {
+  font-size: 120px !important;
+}
+
+.recipe {
+  font-size: 80px !important;
+}
+
+button {
+  cursor: pointer;
+  font-size: 80px !important;
+  padding-top: 80px;
+}
