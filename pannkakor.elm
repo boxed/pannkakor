@@ -19,7 +19,7 @@ ingredients =
     , Ingredient (0.5 / 3) "tsk salt"
     , Ingredient (6 / 3) "dl mjölk"
     , Ingredient (3 / 3) "ägg"
-    , Ingredient (3 / 3) "msk smör"
+    , Ingredient (45 / 3) "g smör"
     ]
 
 

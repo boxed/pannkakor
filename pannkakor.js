@@ -8535,7 +8535,7 @@ var _user$project$Main$ingredients = {
 				_0: A2(_user$project$Main$Ingredient, 3 / 3, 'ägg'),
 				_1: {
 					ctor: '::',
-					_0: A2(_user$project$Main$Ingredient, 3 / 3, 'msk smör'),
+					_0: A2(_user$project$Main$Ingredient, 45 / 3, 'g smör'),
 					_1: {ctor: '[]'}
 				}
 			}
