@@ -1,5 +1,6 @@
-module Main exposing (..)
+module Pannkakor exposing (..)
 
+import Browser
 import Html exposing (Html, div, text, button, h1)
 import Html.Events exposing (onClick)
 import Html.Attributes exposing (class)
@@ -7,7 +8,7 @@ import Round
 
 
 main =
-    Html.beginnerProgram { model = model, view = view, update = update }
+    Browser.sandbox { init = 3, view = view, update = update }
 
 
 type alias Ingredient =
@@ -29,10 +30,6 @@ ingredients =
 
 type alias Model =
     Float
-
-
-model =
-    3
 
 
 
@@ -93,7 +90,7 @@ ingredientView model ingredient =
 view : Model -> Html Msg
 view model =
     div [ class "top" ]
-        [ h1 [] [ text "Pannkakor" ]
+        [ h1 [] [ text (String.fromInt (round model * 2) ++ " pannkakor" )]
         , div [ class "recipe" ]
             [ div [] (List.map (ingredientView model) ingredients) ]
         , div [ class "buttons" ]
