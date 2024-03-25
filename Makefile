@@ -1,2 +1,2 @@
 build:
-	elm make Pannkakor.elm --output=pannkakor.js
+	elm make src/Pannkakor.elm --output=pannkakor.js
